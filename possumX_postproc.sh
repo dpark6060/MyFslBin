@@ -161,7 +161,7 @@ if [ $sigma != 0 ]; then
    echo sigma for system noise is $sigma
    run "${POSSUMDIR}/bin/systemnoise --in=${subjdir}/signal_nonoise --out=${subjdir}/signal --sigma=${sigma}" $subjdir
 fi
-run "${POSSUMDIR}/bin/signal2image -i ${subjdir}/signal -o ${subjdir}/image -p ${subjdir}/pulse --homo --kout=${subjdir}/s2i_Kvals -c ${subjdir}/Kcoord_mot_bin " ${subjdir}
+#run "${POSSUMDIR}/bin/signal2image -i ${subjdir}/signal -o ${subjdir}/image -p ${subjdir}/pulse --homo --kout=${subjdir}/s2i_Kvals -c ${subjdir}/Kcoord_mot_bin " ${subjdir}
 
 imrm ${subjdir}/image_mean
 
